@@ -3,23 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Neuroloft</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 55px 24px 35px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 10px;
+      margin-bottom: auto;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: auto 0;
+      z-index: 2;
+    }
+
+    .statement {
+      font-size: clamp(25px, 3vw, 40px);
+      line-height: 1.4;
+      font-weight: 300;
+      color: #d4d4d4;
+    }
+
+    .intelligence {
+      margin-top: 8px;
+      font-size: clamp(38px, 4.3vw, 60px);
+      font-weight: 300;
+      color: #d4d4d4;
+    }
+
+    .intelligence strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .description {
+      margin: 48px auto 0;
+      max-width: 720px;
+      font-size: 16px;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      color: #a7a7a7;
+    }
+
+    .glow {
+      position: absolute;
+      bottom: -180px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1200px;
+      height: 300px;
+      border-radius: 50%;
+      border-top: 1px solid rgba(180, 215, 255, .8);
+      box-shadow:
+        0 -8px 40px rgba(100, 170, 255, .25),
+        0 -2px 8px rgba(255, 255, 255, .4);
+    }
+
+    .footer {
+      font-size: 10px;
+      letter-spacing: 5px;
+      color: #777;
+      z-index: 2;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 35px 20px 25px;
+      }
+
+      .brand {
+        font-size: 16px;
+        letter-spacing: 7px;
+      }
+
+      .description {
+        margin-top: 35px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>NEUROLOFT</h1>
+  <main class="page">
 
-  <h2>Everyone is building AI.</h2>
+    <div class="brand">NEUROLOFT</div>
 
-  <h2>
-    But AI is not the destination.<br>
-    Intelligence is.
-  </h2>
+    <section class="hero">
 
-  <p>
-    At Neuroloft, we're interested in what comes next.
-  </p>
+      <div class="statement">
+        Everyone is building AI.<br>
+        But AI is not the destination.
+      </div>
+
+      <div class="intelligence">
+        <strong>Intelligence</strong> is.
+      </div>
+
+      <div class="description">
+        We explore what comes next — how intelligence will reshape
+        technology, organizations, and life.
+      </div>
+
+    </section>
+
+    <div class="glow"></div>
+
+    <div class="footer">
+      IDEAS FOR A MORE INTELLIGENT TOMORROW
+    </div>
+
+  </main>
 
 </body>
 </html>
